@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list1"
+    tools:context=".Settings"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Admin Panel"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+    <TextView
+        android:id="@+id/simtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sim"
+        android:textColor="#D8FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_marginHorizontal="40dp"
+        />
+
+
+    <TextView
+        android:id="@+id/phonetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sms xabar yuboriluvchi raqam"
+        android:textColor="#D8FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.3"
+        android:background="#fff"
+        android:hint="telefon raqam"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <TextView
+        android:id="@+id/wifissidtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ssid"
+        android:textColor="#D8FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/wifissid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.3"
+        android:background="#fff"
+        android:hint="Faol nuqta nomi"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="10dp"
+        />
+    <TextView
+        android:id="@+id/wifipasstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/wifi"
+        android:textColor="#D8FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/wifipass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.3"
+        android:background="#fff"
+        android:hint="12345678"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="10dp"
+        />
+    <TextView
+        android:id="@+id/wifipasstexts"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#D8FFFFFF"
+        android:textSize="20sp"
+        android:paddingTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/button"
+        android:text="Saqlash"
+        android:textColor="#000"
+        android:textSize="25sp" />
+</LinearLayout>

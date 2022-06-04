@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainact"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gaz xolati"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gass" />
+
+    <com.shinelw.library.ColorArcProgressBar
+        android:id="@+id/gass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:tooltipText="fghjk"
+        app:back_color="#f00"
+        app:back_width="2dp"
+        app:chainUseRtl="true"
+        app:current_value="90"
+        app:front_color1="#2BFA07"
+        app:front_color2="#FFB802"
+        app:front_color3="#FF0000"
+        app:front_width="10dp"
+        app:is_need_content="true"
+        app:is_need_dial="true"
+        app:is_need_title="true"
+        app:is_need_unit="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:max_value="100"
+        app:string_title=" "
+        app:string_unit=" %"
+        app:total_engle="270" />
+
+    <Button
+        android:id="@+id/stopbutton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/round_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="6dp"
+        android:text="Stop"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/onoff"
+        app:layout_constraintStart_toEndOf="@+id/setbutton" />
+
+    <ImageView
+        android:id="@+id/setbutton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+    <ImageView
+        android:id="@+id/onoff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/onimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gas Alarm </string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="sim">Sim modul Signal sifati</string>
+    <string name="wifi">Tizim WiFi paroli"</string>
+    <string name="ssid">Tizim WiFi nomi"</string>
+</resources>
